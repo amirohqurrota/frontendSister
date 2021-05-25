@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+
+    <div class="flex flex-row w-full pl-6 bg-gray-300">
+        <!-- Left Navbar -->
+        <div class="flex flex-col w-16 bg-gray-400 pt-4 font-bold h-screen fixed z-10">
+            <ul class="text-white">
+                <div class="group hover:bg-white md:flex-col items-center justify-center m-0 mb-24">
+                    <img class="group-hover:text-gray-400 w-8 mx-auto hover:" src="../src/asset/settings-62.png" alt="">
+                    <li class="group-hover:text-gray-400 text-center">LOGO</li>
+                </div>
+
+                <div class="mb-4">
+                    <img class="w-8 mx-auto" src="../src/asset/home2.png"  alt="">
+                    <li class="text-center text-xs">Home</li>
+                </div>
+
+                <div class="mb-4">
+                    <img class="w-8 mx-auto" src="../src/asset/chat-12.png"  alt="">
+                    <li class="text-center text-sm">Chat</li>
+                </div>
+
+                <div class="mb-4">
+                    <img class="w-8 mx-auto" src="../src/asset/001-chat2.png"  alt="">
+                    <li class="text-center text-sm">Group Chat</li>
+                </div>
+
+                <div class="mb-4">
+                    <img class="w-8 mx-auto" src="../src/asset/avatar2.png"  alt="">
+                    <li class="text-center text-sm">Profile</li>
+                </div>
+
+                <div class="mb-4">
+                    <img class="w-8 mx-auto" src="../src/asset/settings-62.png"  alt="">
+                    <li class="text-center text-sm">Settings</li>
+                </div>
+
+                <img class="w-8 mx-auto" src="../src/asset/logout2.png"  alt="">
+                <li class="text-center text-sm">Logout</li>
+            </ul>
+        </div>
+        <!-- Main Container -->
+        <div class="main-content box-border p-4 bg-grey-300 w-full ml-16 h-screen flex">
+            <!-- Post -->
+            <div class="w-3/12 pr-4 flex justify-center items-center">
+                <div class="flex flex-col w-10/12 border-4 border-yellow-800 rounded-xl p-6">
+                    <img src="../src/asset/story-1.jpg" alt="">
+                    <div class="flex items-center mt-4">
+                        <img class="w-16 rounded-full" src="../src/asset/pp.jpg" alt="">
+                        <h3 class="text-yellow-800 font-medium ml-2">Ivan Budianto</h3>
+                        <button class="ml-auto mr-2"><span class="material-icons">edit</span></button>
+                        <button><span class="material-icons">delete_outline</span></button>
+                    </div>
+                    <p class="text-yellow-800 mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ducimus, cumque adipisci fugit iste praesentium aspernatur dolorem numquam eum in.</p>
+                    <div class="flex items-center mt-4">
+                        <img src="../src/asset/chat-13.png" class="w-8" alt="">
+                        <h3 class="text-yellow-800 font-bold ml-4">Comment</h3>
+                        <h3 class="text-yellow-800 font-bold ml-auto">1002</h3>
+                    </div>
+                    <div class="flex items-center mt-4">
+                        <img src="../src/asset/022-happy.png" class="w-8" alt="">
+                        <h3 class="text-yellow-800 font-bold ml-4">Like</h3>
+                        <h3 class="text-yellow-800 font-bold ml-auto">1002</h3>
+                    </div>
+                    <div class="flex items-center mt-4">
+                        <img src="../src/asset/023-sad.png" class="w-8" alt="">
+                        <h3 class="text-yellow-800 font-bold ml-4">Dislike</h3>
+                        <h3 class="text-yellow-800 font-bold ml-auto">1002</h3>
+                    </div>
+                    <div class="flex items-center mt-4">
+                        <img src="../src/asset/share-1.png" class="w-8" alt="">
+                        <h3 class="text-yellow-800 font-bold ml-4">Share</h3>
+                    </div>
+                    <h4 class="text-yellow-800 text-xs mt-2 self-end">20 September 2020</h4>
+                </div>
+                
+            </div>
+            <!-- Chat Main Window -->
+            <div class="w-6/12 h-full pr-4">
+                <div class="flex flex-col justify-end h-5/6 px-2 rounded-lg border border-yellow-800">
+                    <div class="flex items-center w-full mb-4">
+                        <div class="flex flex-col items-center w-1/6">
+                            <img class="w-16 rounded-full" src="../src/asset/pp.jpg" alt="">
+                            <h3 class="text-yellow-800 text-s font-bold">Ivan Budianto</h3>
+                        </div>
+
+                        <div class="flex flex-col ml-2 bg-white p-2 rounded-xl w-4/6">
+                            <p class="text-yellow-800 font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat distinctio suscipit similique labore rerum iure ipsam animi voluptatem deleniti inventore.</p>
+                            <h3 class="text-yellow-800 self-end">@ivanbudianto0603</h3>
+                        </div>
+                        <div class="ml-auto">
+                            <button class="ml-auto mr-2"><span class="material-icons">edit</span></button>
+                        <button><span class="material-icons">delete_outline</span></button>
+                        </div>
+                    </div>
+                    <div class="flex items-center w-full">
+                        <div class="flex flex-col items-center w-1/6">
+                            <img class="w-16 rounded-full" src="../src/asset/pp.jpg" alt="">
+                            <h3 class="text-yellow-800 text-s font-bold">Jessica Maya</h3>
+                        </div>
+
+                        <div class="flex flex-col ml-2 bg-white p-2 rounded-xl w-4/6">
+                            <p class="text-yellow-800 font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat distinctio suscipit similique labore rerum iure ipsam animi voluptatem deleniti inventore.</p>
+                            <h3 class="text-yellow-800 self-end">@ivanbudianto0603</h3>
+                        </div>
+                        <div class="ml-auto">
+                        <button class="ml-auto mr-2"><span class="material-icons">delete_outline</span></button>
+                        </div>
+                    </div>
+                    <!-- Message Input -->
+                    <div class="flex items-center">
+                        <img class="w-16 rounded-full mr-2" src="../src/asset/pp.jpg" alt="">
+                        <div class="relative mt-4 mb-2 w-11/12 inline">
+                            <input type="text" id="password" class="w-full pl-3 pr-10 py-2 border-2 border-yellow-800 rounded-xl hover:shadow-lg focus:outline-none focus:border-yellow-800 transition" placeholder="Type here...">
+                            <button class="block w-7 h-7 text-center text-xl leading-0 absolute top-2 right-2 text-gray-400 focus:outline-none hover:text-gray-900 transition-colors">
+                                <span class="material-icons">
+                                    send
+                                    </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Friend Suggestion -->
+            <div class="flex flex-col items-center w-3/12 border-l-2 border-yellow-800 px-4">
+                <div class="flex mt-16 mb-6 w-full justify-between	">
+                    <h2 class="font-bold text-2xl text-yellow-800 ">Suggestion for you</h2>
+                    <h2 class="text-2xl text-yellow-800">See All</h2>
+                </div>
+                <!-- Suggestion Item -->
+                <div class="flex items-center w-full">
+                    <img class="w-16 rounded-full" src="../src/asset/pp.jpg" alt="">
+                    <div class="flex flex-col ml-2">
+                        <h3 class="text-yellow-800 font-bold">Ivan Budianto</h3>
+                        <h3 class="text-yellow-800">@ivanbudianto0603</h3>
+                    </div>
+                    <button class="focus:outline-none bg-yellow-800 text-white p-2 rounded-xl ml-auto">Follow</button>
+                </div>
+                <div class="flex items-center w-full mt-4">
+                    <img class="w-16 rounded-full" src="../src/asset/pp.jpg" alt="">
+                    <div class="flex flex-col ml-2">
+                        <h3 class="text-yellow-800 font-bold">Jessica Maya</h3>
+                        <h3 class="text-yellow-800">@jessicamaya1702</h3>
+                    </div>
+                    <button class="focus:outline-none bg-white text-yellow-800 p-2 rounded-xl ml-auto">Followed</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
