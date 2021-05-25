@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+
+    <div class="flex flex-row w-full pl-6 bg-gray-300">
+        <!-- Left Navbar -->
+        <div class="flex flex-col w-16 bg-gray-400 pt-4 font-bold h-screen fixed z-10">
+            <ul class="text-white">
+                <div class="group hover:bg-white md:flex-col items-center justify-center m-0 mb-24">
+                    <img class="group-hover:text-gray-400 w-8 mx-auto hover:" src="../src/asset/settings-62.png" alt="">
+                    <li class="group-hover:text-gray-400 text-center">LOGO</li>
+                </div>
+
+                <div class="mb-4">
+                    <img class="w-8 mx-auto" src="../src/asset/home2.png"  alt="">
+                    <li class="text-center text-xs">Home</li>
+                </div>
+
+                <div class="mb-4">
+                    <img class="w-8 mx-auto" src="../src/asset/chat-12.png"  alt="">
+                    <li class="text-center text-sm">Chat</li>
+                </div>
+
+                <div class="mb-4">
+                    <img class="w-8 mx-auto" src="../src/asset/001-chat2.png"  alt="">
+                    <li class="text-center text-sm">Group Chat</li>
+                </div>
+
+                <div class="mb-4">
+                    <img class="w-8 mx-auto" src="../src/asset/avatar2.png"  alt="">
+                    <li class="text-center text-sm">Profile</li>
+                </div>
+
+                <div class="mb-4">
+                    <img class="w-8 mx-auto" src="../src/asset/settings-62.png"  alt="">
+                    <li class="text-center text-sm">Settings</li>
+                </div>
+
+                <img class="w-8 mx-auto" src="../src/asset/logout2.png"  alt="">
+                <li class="text-center text-sm">Logout</li>
+            </ul>
+        </div>
+        <!-- Main Container -->
+        <div class="main-content box-border p-4 bg-grey-300 w-full ml-16 h-screen flex">
+            <!-- Chat List -->
+            <div class="w-3/12 pr-4">
+                <div class="h2 font-bold text-2xl text-yellow-800">Chat</div>
+                <!-- Search Input -->
+                <div class="relative mt-4 mb-2">
+                    <input type="text" id="password" class="w-full pl-3 pr-10 py-2 border-2 border-yellow-800 rounded-xl hover:shadow-lg focus:outline-none focus:border-yellow-800 transition" placeholder="Search...">
+                    <button class="block w-7 h-7 text-center text-xl leading-0 absolute top-2 right-2 text-gray-400 focus:outline-none hover:text-gray-900 transition-colors">
+                        <span class="material-icons">
+                            search
+                            </span>
+                    </button>
+                </div>
+                <!-- Chat Item -->
+                <div class="flex justify-between hover:bg-gray-400 p-2 border-b-2 border-yellow-800">
+                    <div class="flex flex">
+                        <div class="w-16 relative">
+                            <img class="w-16 rounded-full" src="../src/asset/pp.jpg" alt="">
+                            <div class="absolute rounded-full w-4 h-4 bg-green-500 bottom-0 right-0"></div>
+                        </div>
+                        <div class="flex flex-col ml-2">
+                            <h3 class="font-bold text-yellow-800">Ivan Budianto</h3>
+                            <p class="text-yellow-800">Loram lorum ae terus</p>
+                        </div>
+                    </div>
+                    <p class="self-end text-yellow-800">1m ago</p>
+                </div>
+
+                <div class="flex justify-between hover:bg-gray-400 p-2 border-b-2 border-yellow-800">
+                    <div class="flex flex">
+                        <div class="w-16 relative">
+                            <img class="w-16 rounded-full" src="../src/asset/pp.jpg" alt="">
+                            <div class="absolute rounded-full w-4 h-4 bg-green-500 bottom-0 right-0"></div>
+                        </div>
+                        <div class="flex flex-col ml-2">
+                            <h3 class="font-bold text-yellow-800">Ivan Budianto</h3>
+                            <p class="text-yellow-800">Hi! What Are you doing?</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-end items-center">
+                        <div class="rounded-full w-4 h-4 bg-yellow-800"></div>
+                        <p class="self-end text-yellow-800">1m ago</p>
+                    </div>
+                </div>
+
+                <div class="flex justify-between hover:bg-gray-400 p-2 border-b-2 border-yellow-800">
+                    <div class="flex flex">
+                        <div class="w-16 relative">
+                            <img class="w-16 rounded-full" src="../src/asset/pp.jpg" alt="">
+                            <div class="absolute rounded-full w-4 h-4 bg-green-500 bottom-0 right-0"></div>
+                        </div>
+                        <div class="flex flex-col ml-2">
+                            <h3 class="font-bold text-yellow-800">Ivan Budianto</h3>
+                            <p class="text-yellow-800">Hi! What Are you doing?</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-end items-center">
+                        <div class="rounded-full w-4 h-4 bg-yellow-800"></div>
+                        <p class="self-end text-yellow-800">1m ago</p>
+                    </div>
+                </div>
+
+                <div class="flex justify-between hover:bg-gray-400 p-2 border-b-2 border-yellow-800">
+                    <div class="flex flex">
+                        <div class="w-16 relative">
+                            <img class="w-16 rounded-full" src="../src/asset/pp.jpg" alt="">
+                            <div class="absolute rounded-full w-4 h-4 bg-green-500 bottom-0 right-0"></div>
+                        </div>
+                        <div class="flex flex-col ml-2">
+                            <h3 class="font-bold text-yellow-800">Ivan Budianto</h3>
+                            <p class="text-yellow-800">Hi! What Are you doing?</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-end items-center">
+                        <!-- <div class="rounded-full w-4 h-4 bg-yellow-800"></div> -->
+                        <p class="self-end text-yellow-800">1m ago</p>
+                    </div>
+                </div>
+
+                <div class="flex justify-between hover:bg-gray-400 p-2 border-b-2 border-yellow-800">
+                    <div class="flex flex">
+                        <div class="w-16 relative">
+                            <img class="w-16 rounded-full" src="../src/asset/pp.jpg" alt="">
+                            <div class="absolute rounded-full w-4 h-4 bg-green-500 bottom-0 right-0"></div>
+                        </div>
+                        <div class="flex flex-col ml-2">
+                            <h3 class="font-bold text-yellow-800">Ivan Budianto</h3>
+                            <p class="text-yellow-800">Hi! What Are you doing?</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-end items-center">
+                        <!-- <div class="rounded-full w-4 h-4 bg-yellow-800"></div> -->
+                        <p class="self-end text-yellow-800">1m ago</p>
+                    </div>
+                </div>
+
+                <div class="flex justify-between hover:bg-gray-400 p-2 border-b-2 border-yellow-800">
+                    <div class="flex flex">
+                        <div class="w-16 relative">
+                            <img class="w-16 rounded-full" src="../src/asset/pp.jpg" alt="">
+                            <div class="absolute rounded-full w-4 h-4 bg-green-500 bottom-0 right-0"></div>
+                        </div>
+                        <div class="flex flex-col ml-2">
+                            <h3 class="font-bold text-yellow-800">Ivan Budianto</h3>
+                            <p class="text-yellow-800">Hi! What Are you doing?</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-end items-center">
+                        <!-- <div class="rounded-full w-4 h-4 bg-yellow-800"></div> -->
+                        <p class="self-end text-yellow-800">1m ago</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Chat Main Window -->
+            <div class="w-6/12 h-full pr-4">
+                <!-- Chat Option -->
+                <div class="flex flex-col h-1/6">
+                    <div class="flex items-center">
+                        <img class="w-16 rounded-full" src="../src/asset/pp.jpg" alt="">
+                        <div class="flex flex-col ml-2">
+                            <h3 class="font-bold text-yellow-800">Ivan Budianto</h3>
+                            <div class="flex items-center">
+                                <div class="rounded-full w-4 h-4 bg-green-500 mr-2"></div>
+                                <h3 class="font-semibold text-yellow-800">Online</h3>
+                            </div>
+                        </div>
+                        <!-- Notification, Call, Vidcall -->
+                        <img class="ml-auto w-8 h-8" src="../src/asset/alarm-13.png" alt="">
+                        <img class="ml-4 w-8 h-8" src="../src/asset/090-phone call.png" alt="">
+                        <img class="ml-4 mr-4 w-8 h-8" src="../src/asset/video-camera.png" alt="">
+                    </div>
+                </div>
+                <div class="flex flex-col justify-end h-5/6 px-2 rounded-lg border border-yellow-800">
+                    <!-- Date -->
+                    <div class="flex justify-center text-yellow-800 mb-2">20/04/2021</div>
+                    <!-- Sent -->
+                    <div class="flex justify-end text-yellow-800 mb-2">
+                        <div class="flex flex-col items-center mr-1">
+                            <span class="material-icons">
+                                star
+                                </span>
+                            <p class="text-yellow-800">09.10</p>
+                        </div>
+                        <p class="bg-yellow-800 text-white rounded-xl p-2">Lorem ipsum dolor sit, amet consectetur</p>
+                    </div>
+                    <!-- Received -->
+                    <div class="flex justify-start text-yellow-800 mb-2">
+                        <p class="bg-yellow-400 text-white rounded-xl p-2">Lorem ipsum dolor sit, amet consectetur</p>
+                        <div class="flex flex-col items-center ml-1">
+                            <span class="material-icons">
+                                star_outline
+                                </span>
+                            <p class="text-yellow-800">09.10</p>
+                        </div>
+                    </div>
+                    <!-- Date -->
+                    <div class="flex justify-center text-yellow-800 mb-2">20/04/2021</div>
+                    <!-- Sent -->
+                    <div class="flex justify-end text-yellow-800 mb-2">
+                        <div class="flex flex-col items-center mr-1">
+                            <span class="material-icons">
+                                star
+                                </span>
+                            <p class="text-yellow-800">09.10</p>
+                        </div>
+                        <p class="bg-yellow-800 text-white rounded-xl p-2">Lorem ipsum dolor sit, amet consectetur</p>
+                    </div>
+                    <!-- Received -->
+                    <div class="flex justify-start text-yellow-800 mb-2">
+                        <p class="bg-yellow-400 text-white rounded-xl p-2">Lorem ipsum dolor sit, amet consectetur</p>
+                        <div class="flex flex-col items-center ml-1">
+                            <span class="material-icons">
+                                star
+                                </span>
+                            <p class="text-yellow-800">09.10</p>
+                        </div>
+                    </div>
+                    <!-- Message Input -->
+                    <div class="flex items-center">
+                        <button class="focus:outline-none mt-4">
+                            <span class="material-icons text-yellow-800" style="font-size: 40px;">
+                                image
+                            </span>
+                        </button>
+                        <div class="relative mt-4 mb-2 w-11/12 inline">
+                            <input type="text" id="password" class="w-full pl-3 pr-10 py-2 border-2 border-yellow-800 rounded-xl hover:shadow-lg focus:outline-none focus:border-yellow-800 transition" placeholder="Type here...">
+                            <button class="block w-7 h-7 text-center text-xl leading-0 absolute top-2 right-2 text-gray-400 focus:outline-none hover:text-gray-900 transition-colors">
+                                <span class="material-icons">
+                                    send
+                                    </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col items-center w-3/12 border-l-2 border-yellow-800 px-4">
+                <img class="w-32 rounded-full" src="../src/asset/pp.jpg" alt="">
+                <h3 class="text-yellow-800 font-bold">Ivan Budianto</h3>
+                <div class="flex items-center">
+                    <div class="rounded-full w-4 h-4 bg-green-500 mr-2"></div>
+                    <h3 class="text-yellow-800">Online</h3>
+                </div>
+
+                <h2 class="font-bold self-start text text-2xl text-yellow-800 mt-16 mb-6">Favourite Chat</h2>
+                <!-- Date -->
+                <div class="flex justify-center text-yellow-800 mb-2">20/04/2021</div>
+                <!-- Sent -->
+                <div class="flex self-end text-yellow-800 mb-2">
+                    <div class="flex flex-col items-center mr-1">
+                        <span class="material-icons">
+                            star
+                            </span>
+                        <p class="text-yellow-800">09.10</p>
+                    </div>
+                    <p class="bg-yellow-800 text-white rounded-xl p-2">Lorem ipsum dolor sit, amet consectetur</p>
+                </div>
+                <div class="flex justify-center text-yellow-800 mb-2">20/04/2021</div>
+                <!-- Received -->
+                <div class="flex self-start text-yellow-800 mb-2">
+                    <p class="bg-yellow-400 text-white rounded-xl p-2">Lorem ipsum dolor sit, amet consectetur</p>
+                    <div class="flex flex-col items-center ml-1">
+                        <span class="material-icons">
+                            star
+                            </span>
+                        <p class="text-yellow-800">09.10</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
